@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<algorithm>
 using namespace std;
 
 string reqNum(string s1,string s2){
@@ -9,6 +10,7 @@ string reqNum(string s1,string s2){
         if(s1[i]==s2[i]) result.push_back('0');
         else result.push_back('1');
     }
+    reverse(result.begin(),result.end());
     return result;
 }
 
